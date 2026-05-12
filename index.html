@@ -4,143 +4,217 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Galo Shoes — Home</title>
+
   <link rel="stylesheet" href="css/styles.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<!-- MODAL DEL CARRITO -->
-<div id="cart-modal" class="cart-modal">
-  <div class="cart-content">
-    <span id="close-cart" class="close">&times;</span>
-    <h2>Tu carrito</h2>
-
-    <div id="cart-items"></div>
-
-    <h3 class="total">Total: $<span id="cart-total">0.00</span></h3>
-
-    <button id="buy-btn" class="btn primary" style="margin-top: 15px;">
-      Simular compra
-    </button>
-  </div>
-</div>
 
 <body>
+
+  <!-- MODAL DEL CARRITO -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+      <span id="close-cart" class="close">&times;</span>
+
+      <h2>Tu carrito</h2>
+
+      <div id="cart-items"></div>
+
+      <h3 class="total">
+        Total: $<span id="cart-total">0.00</span>
+      </h3>
+
+      <button id="buy-btn" class="btn primary" style="margin-top:15px;">
+        Simular compra
+      </button>
+    </div>
+  </div>
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
+
       <div class="brand">
-        <img src="assets/images/logo.png" alt="Galo Shoes Logo" class="logo-img" />
-        <h1 class="logo-text">Galo <span>Shoes</span></h1>
+        <img src="logo.png" alt="Galo Shoes Logo" class="logo-img" />
+        <h1 class="logo-text">
+          Galo <span>Shoes</span>
+        </h1>
       </div>
 
-    <nav class="main-nav">
-  <a href="#home" data-nav>Home</a>
-  <a href="#shop" data-nav>Shop</a>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
 
-  <a href="https://forms.office.com/r/Pfu75iBUXw"
-     target="_blank"
-     class="orders-btn">
-     Pedidos
-  </a>
+        <a href="https://forms.office.com/r/Pfu75iBUXw"
+           target="_blank"
+           class="orders-btn">
+           Pedidos
+        </a>
 
-  <a href="#featured" data-nav>Featured</a>
-  <a href="#about" data-nav>About</a>
-  <a href="#contact" data-nav>Contact</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
 
-  <button id="cart-btn" class="cart-btn">
-    Carrito (<span id="cart-count">0</span>)
-  </button>
-</nav>
+        <button id="cart-btn" class="cart-btn">
+          Carrito (<span id="cart-count">0</span>)
+        </button>
+      </nav>
+
     </div>
   </header>
 
-  <!-- 1: HERO -->
+  <!-- HERO -->
   <section id="home" class="hero">
     <div class="hero-content container">
+
       <h2>GALO SHOES</h2>
-      <p class="subtitle">Urban sneakers for the bold youth — Fresh drops • Limited editions</p>
+
+      <p class="subtitle">
+        Urban sneakers for the bold youth — Fresh drops • Limited editions
+      </p>
+
       <div class="hero-actions">
-        <button id="shop-now" class="btn primary">Shop Now</button>
-        <button id="view-collection" class="btn ghost">New Arrivals</button>
+        <button id="shop-now" class="btn primary">
+          Shop Now
+        </button>
+
+        <button id="view-collection" class="btn ghost">
+          New Arrivals
+        </button>
       </div>
+
     </div>
   </section>
 
-  <!-- 2: SHOP / New Arrivals -->
-  <section id="shop" class="section shop-section">
-    <div class="container">
-      <h2 class="section-title">New Arrivals</h2>
-      <div class="cards" id="product-list">
-        <!-- Cards generadas por JS -->
+  <!-- IMAGEN 1 -->
+  <section id="shop" class="section featured">
+    <div class="container featured-inner">
+
+      <div class="featured-media">
+        <img src="street1.jpg" alt="Sneaker 1" />
       </div>
+
+      <div class="featured-info">
+        <h3>Street Runner</h3>
+
+        <p class="price">$79.99</p>
+
+        <p class="desc">
+          Stylish urban sneakers with premium comfort and modern streetwear vibes.
+        </p>
+
+        <button class="btn primary">
+          Add to Cart
+        </button>
+      </div>
+
     </div>
   </section>
 
-  <!-- 3: FEATURED -->
-  <section id="featured" class="section featured">
+  <!-- IMAGEN 2 -->
+  <section class="section featured">
     <div class="container featured-inner">
+
       <div class="featured-media">
-        <img src="https://tiendacloud01gaelm.blob.core.windows.net/imagenes/featured.jpg" alt="Featured sneaker" />
+        <img src="street2.jpg" alt="Sneaker 2" />
       </div>
+
       <div class="featured-info">
-        <h3>Street Runner — Limited Edition</h3>
-        <p class="price" id="featured-price">$79.99</p>
-        <p class="desc">A lightweight sneaker designed for everyday urban wear. Breathable materials and bold colorways.</p>
-        <button class="btn primary" id="featured-add">Add to Cart</button>
+        <h3>Night Street Edition</h3>
+
+        <p class="price">$89.99</p>
+
+        <p class="desc">
+          Bold design inspired by modern city fashion and street culture.
+        </p>
+
+        <button class="btn primary">
+          Add to Cart
+        </button>
       </div>
+
     </div>
   </section>
- <section id="featured" class="section featured">
+
+  <!-- IMAGEN 3 -->
+  <section class="section featured">
     <div class="container featured-inner">
+
       <div class="featured-media">
-        <img id="featured-img" src="street1.jpg" alt="Featured sneaker" />
+        <img src="street3.jpg" alt="Sneaker 3" />
       </div>
+
       <div class="featured-info">
-        <h3>Street Runner — Limited Edition</h3>
-        <p class="price" id="featured-price">$79.99</p>
-        <p class="desc">A lightweight sneaker designed for everyday urban wear. Breathable materials and bold colorways.</p>
-        <button class="btn primary" id="featured-add">Add to Cart</button>
+        <h3>Urban Motion</h3>
+
+        <p class="price">$84.99</p>
+
+        <p class="desc">
+          Lightweight sneakers built for comfort, movement and everyday style.
+        </p>
+
+        <button class="btn primary">
+          Add to Cart
+        </button>
       </div>
+
     </div>
   </section>
-  <!-- 4: ABOUT -->
+
+  <!-- ABOUT -->
   <section id="about" class="section about">
     <div class="container">
-      <h2 class="section-title">About Galo Shoes</h2>
-      <p>Galo Shoes is a youth-focused streetwear sneaker brand inspired by urban culture and creative expression. We design limited drops with bold colorways and comfortable fits so young people can stand out and feel confident.</p>
+
+      <h2 class="section-title">
+        About Galo Shoes
+      </h2>
+
+      <p>
+        Galo Shoes is a youth-focused streetwear sneaker brand inspired by urban culture and creative expression.
+      </p>
+
     </div>
   </section>
- <section id="featured" class="section featured">
-    <div class="container featured-inner">
-      <div class="featured-media">
-        <img id="featured-img" src="street2.jpg" alt="Featured sneaker" />
-      </div>
-      <div class="featured-info">
-        <h3>Street Runner — Limited Edition</h3>
-        <p class="price" id="featured-price">$79.99</p>
-        <p class="desc">A lightweight sneaker designed for everyday urban wear. Breathable materials and bold colorways.</p>
-        <button class="btn primary" id="featured-add">Add to Cart</button>
-      </div>
-    </div>
-  </section>
-  <!-- 5: CONTACT / FOOTER -->
+
+  <!-- FOOTER -->
   <footer id="contact" class="site-footer">
+
     <div class="container footer-inner">
+
       <div class="follow">
         <h4>Follow us @GaloShoes</h4>
+
         <div class="footer-actions">
-          <button onclick="window.location.href='mailto:germangaelglez@gmail.com'">Email</button>
-          <button onclick="alert('Llamando...')">Call</button>
-          <button onclick="alert('Abriendo Instagram...')">Instagram</button>
+          <button onclick="window.location.href='mailto:germangaelglez@gmail.com'">
+            Email
+          </button>
+
+          <button onclick="alert('Llamando...')">
+            Call
+          </button>
+
+          <button onclick="alert('Abriendo Instagram...')">
+            Instagram
+          </button>
         </div>
       </div>
+
       <div class="contact-info">
         <p>Contact: germangaelglez@gmail.com</p>
+
         <p>Phone: (55) 2525-0468</p>
-        <p class="muted">© 2025 Galo Shoes — All rights reserved.</p>
+
+        <p class="muted">
+          © 2025 Galo Shoes — All rights reserved.
+        </p>
       </div>
+
     </div>
+
   </footer>
 
   <script src="app.js"></script>
+
 </body>
 </html>
